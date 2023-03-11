@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Mario Kart DS (EUR)",
+        "digest": "2b15d1d5e6a14be3218327cf22fed61535defd37e0a85aeebad3040b9a68e6f9",
+        "imgFile": "mkds_eur.png",
+        "patches": 
+        [
+            {
+                "name": "Ermii Kart DS Legacy Edition 1.0",
+                "fileName": "eur-le1.0.xdelta"
+            }
+        ]
+    },
+    {
+        "name": "Ermii Kart DS (b1-r)",
+        "digest": "aea821ada922be0d9c4a3d6a59a2c1ff175220e1f3867b3eaae3d9d91ac337a1",
+        "imgFile": "ekds_b1.png",
+        "patches": 
+        [
+            {
+                "name": "Ermii Kart DS Legacy Edition 1.0",
+                "fileName": "b1r-le1.0.xdelta"
+            }
+        ]
+    },
+    {
+        "name": "Ermii Kart DS (b1-s)",
+        "digest": "c4c9ddf1ee97bcfc699ae4ca9745121286a09942033cdfe7e6ac4057c0b4f2e7",
+        "imgFile": "ekds_b1.png",
+        "patches": 
+        [
+            {
+                "name": "Ermii Kart DS Legacy Edition 1.0",
+                "fileName": "b1s-le1.0.xdelta"
+            }
+        ]
+    }
+]
