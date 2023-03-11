@@ -77,7 +77,9 @@ function getRomDigest() {
 }
 
 function downloadPatch(patch) {
-    return fetch(patch.fileUri, { mode: "no-cors" })
+    let fileUri = decodeURI("https://cors.haroohie.club/" + patch.fileUri);
+
+    return fetch(fileUri)
         .then(result => result.blob())
         .then(blob => {
             var file = blob;
