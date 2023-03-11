@@ -77,7 +77,7 @@ function getRomDigest() {
 }
 
 function downloadPatch(patch) {
-    return fetch(patch.fileUri).then(result => result.blob()) // Gets the response and returns it as a blob
+    return fetch(patch.fileUri, { mode: "cors" }).then(result => result.blob()) // Gets the response and returns it as a blob
         .then(arrayBuffer => {
             var file = arrayBuffer;
             file.size = arrayBuffer.byteLength;
