@@ -4,6 +4,21 @@
 <head>
     <title>Ermii Kart DS Patcher</title>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Ermii Kart DS Patcher and updater.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ermii Kart DS Patcher">
+    <meta name="twitter:description" content="Ermii Kart DS Patcher and updater">
+    <meta name="twitter:site" content="@ermelber">
+
+    <meta name="og:title" content="ErmiiSoft">
+    <meta name="og:description" content="Ermii Kart DS Patcher and updater.">
+    <meta name="og:type" content="product">
+    <meta name="og:site_name" content="ErmiiSoft">
+    <meta name="og:url" content="https://ermiisoft.net/">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital@0;1&display=swap" rel="stylesheet">
@@ -43,7 +58,8 @@
                             <option>Ermii Kart DS Legacy Edition 1.0</option>
                         </select>
 
-                        <a href="javascript:void(0)" class="btn bg-accent" onclick="patchRom()">Apply Patch!</a>
+                        <a id="btn-wait" style="display: none;" href="javascript:void(0)" class="btn btn-disabled">Please wait...</a>
+                        <a id="btn-patch" href="javascript:void(0)" class="btn" onclick="patchRom()">Apply Patch!</a>
                     </div>
 
             </div>

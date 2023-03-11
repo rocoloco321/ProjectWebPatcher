@@ -4,6 +4,8 @@ let currentRomFile;
 let currentRomDigest;
 let currentRomData;
 
+const CORS_PROXY = "https://api.codetabs.com/v1/proxy?quest=";
+
 document.addEventListener("DOMContentLoaded", function () {
     fetch("assets/json/romPatches.json")
         .then((response) => response.json())
@@ -77,9 +79,13 @@ function getRomDigest() {
 }
 
 function downloadPatch(patch) {
-    let fileUri = decodeURI("https://cors.haroohie.club/" + patch.fileUri);
+    let fileUri = CORS_PROXY + encodeURIComponent(patch.fileUri);
 
-    return fetch(fileUri)
+    return fetch(fileUri, {
+        headers: {
+            "Origin": ""
+        }
+    })
         .then(result => result.blob())
         .then(blob => {
             var file = blob;
@@ -104,19 +110,31 @@ function patchRom() {
     var selectedPatchIndex = document.getElementById("romPatchesSelector").value;
     var selectedPatch = currentRomData.patches[selectedPatchIndex];
 
+    showLoading();
+
     downloadPatch(selectedPatch).then((file) => {
         if (file === undefined)
             return;
-
-        console.log(file);
 
         var preparedFile = new MarcFile(file, () => {
             var patchFile = parseVCDIFF(preparedFile);
             var patchedFile = patchFile.apply(currentRomFile, false);
             patchedFile.fileName = selectedPatch.patchedRomFileName;
             patchedFile.save();
+
+            hideLoading();
         });
     });
+}
+
+function showLoading() {
+    document.getElementById("btn-wait").style = "";
+    document.getElementById("btn-patch").style = "display: none;";
+}
+
+function hideLoading() {
+    document.getElementById("btn-patch").style = "";
+    document.getElementById("btn-wait").style = "display: none;";
 }
 
 

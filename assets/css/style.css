@@ -27,6 +27,7 @@ body {
 }
 
 .btn {
+    cursor: pointer;
     background-color: var(--accent-color) !important;
     color: var(--main-background) !important;
     font-weight: bold;
@@ -38,7 +39,11 @@ body {
     margin-bottom: auto;
     height: 32px;
     line-height: 32px;
-    filter: brightness(100%);
+}
+
+.btn-disabled {
+    cursor: not-allowed !important;
+    opacity: 0.5;
 }
 
 h3 {
