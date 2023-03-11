@@ -77,10 +77,11 @@ function getRomDigest() {
 }
 
 function downloadPatch(patch) {
-    return fetch(patch.fileUri, { mode: "cors" }).then(result => result.blob()) // Gets the response and returns it as a blob
-        .then(arrayBuffer => {
-            var file = arrayBuffer;
-            file.size = arrayBuffer.byteLength;
+    return fetch(patch.fileUri, { mode: "no-cors" })
+        .then(result => result.blob())
+        .then(blob => {
+            var file = blob;
+            file.size = blob.byteLength;
             file.type = "";
             file.name = patch.fileName;
 
@@ -104,6 +105,8 @@ function patchRom() {
     downloadPatch(selectedPatch).then((file) => {
         if (file === undefined)
             return;
+
+        console.log(file);
 
         var preparedFile = new MarcFile(file, () => {
             var patchFile = parseVCDIFF(preparedFile);
