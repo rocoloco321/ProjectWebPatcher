@@ -44,14 +44,13 @@
                 <h3>Step 1 - Upload your ROM</h2>
                     <input type="file" accept=".nds" onchange="onInputRomUploaded(this)">
 
+                    <div id="rom-info-content" style="display: none">
+                        <a href="javascript:void(0)" id="rom-info-name">Unsupported ROM</a>
+                        <div id="rom-info-digest"></div>
+                        <img id="rom-info-image" src="assets/img/mkds_eur.png">
+                    </div>
 
                     <div class="card-content" id="step-2" style="display: none">
-                        <div class="rom-info-content">
-                            <a href="javascript:void(0)" id="rom-info-name"></a>
-                            <div id="rom-info-digest"></div>
-                            <img id="rom-info-image" src="assets/img/mkds_eur.png">
-                        </div>
-
                         <h3>Step 2 - Select patch</h3>
 
                         <select id="romPatchesSelector">

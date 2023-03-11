@@ -15,8 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
 function loadRomData() {
     currentRomData = null;
 
+    document.getElementById("step-2").style = "display: none;";
+    document.getElementById("rom-info-content").style = "";
+    document.getElementById("rom-info-image").style = "display: none;";
+    document.getElementById("rom-info-digest").innerText = "SHA-256 " + currentRomDigest;
+
     for (var i = 0; i < romPatches.length; i++) {
         if (romPatches[i].digest == currentRomDigest) {
+            document.getElementById("step-2").style = "";
             currentRomData = romPatches[i];
             loadRomInfo();
             loadRomPatches();
@@ -24,19 +30,16 @@ function loadRomData() {
         }
     }
 
-    document.getElementById("step-2").style = "display: none;";
+    document.getElementById("rom-info-name").innerText = "Unsupported ROM";
     alert("The supplied ROM isn't compatible")
 }
 
 function loadRomInfo() {
     var image = document.getElementById("rom-info-image");
     image.src = "assets/img/" + currentRomData.imgFile;
+    image.style = "";
 
-    var romNameDiv = document.getElementById("rom-info-name");
-    romNameDiv.innerText = currentRomData.name;
-
-    var romDigestDiv = document.getElementById("rom-info-digest");
-    romDigestDiv.innerText = "SHA-256 " + currentRomData.digest;
+    document.getElementById("rom-info-name").innerText = currentRomData.name;
 }
 
 function loadRomPatches() {
@@ -53,7 +56,6 @@ function loadRomPatches() {
 function getRomFile(input) {
     currentRomFile = new MarcFile(input, () => getRomDigest().then((digest) => {
         currentRomDigest = digest;
-        document.getElementById("step-2").style = "";
         loadRomData();
     }));
 }

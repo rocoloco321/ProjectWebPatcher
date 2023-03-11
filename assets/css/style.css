@@ -67,7 +67,7 @@ h3 {
     gap: 30px;
 }
 
-.rom-info-content {
+#rom-info-content {
     width: 100%;
     display: flex;
     flex-direction: column;
