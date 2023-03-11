@@ -7,7 +7,9 @@
         [
             {
                 "name": "Ermii Kart DS Legacy Edition 1.0",
-                "fileName": "eur-le1.0.xdelta"
+                "fileName": "eur-le.xdelta",
+                "fileUri": "https://github.com/Ermelber/ErmiiKartDS-release/releases/download/v1.0.0-LE/eur-le.xdelta",
+                "patchedRomFileName": "Ermii Kart DS - Legacy Edition (1.0).nds"
             }
         ]
     },
@@ -19,7 +21,9 @@
         [
             {
                 "name": "Ermii Kart DS Legacy Edition 1.0",
-                "fileName": "b1r-le1.0.xdelta"
+                "fileName": "b1r-le.xdelta",
+                "fileUri": "https://github.com/Ermelber/ErmiiKartDS-release/releases/download/v1.0.0-LE/b1r-le.xdelta",
+                "patchedRomFileName": "Ermii Kart DS - Legacy Edition (1.0).nds"
             }
         ]
     },
@@ -31,7 +35,9 @@
         [
             {
                 "name": "Ermii Kart DS Legacy Edition 1.0",
-                "fileName": "b1s-le1.0.xdelta"
+                "fileName": "b1s-le.xdelta",
+                "fileUri": "https://github.com/Ermelber/ErmiiKartDS-release/releases/download/v1.0.0-LE/b1s-le.xdelta",
+                "patchedRomFileName": "Ermii Kart DS - Legacy Edition (1.0).nds"
             }
         ]
     }
