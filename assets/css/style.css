@@ -6,12 +6,13 @@
     --main-background: #282828;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: Exo, Verdana, Geneva, Tahoma, sans-serif;
-    
+
     background-color: var(--main-background);
     color: var(--main-white);
 
@@ -25,11 +26,65 @@ body {
     justify-content: center;
 }
 
+.btn {
+    background-color: var(--accent-color) !important;
+    color: var(--main-background) !important;
+    font-weight: bold;
+    border-radius: 16px;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin: 0em 0.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 32px;
+    line-height: 32px;
+    filter: brightness(100%);
+}
+
+h3 {
+    margin: 0;
+}
+
 .card {
     border-radius: 10px;
     background-color: var(--main-gray);
-    padding: 0.5em 1em;
+    padding: 1em 1em 1em 1em;
     width: 600px;
+    min-height: 400px;
+}
+
+.card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rom-info-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#rom-info-image {
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+#rom-info-image:hover {
+    transform: scale(1.03);
+}
+
+#rom-info-digest {
+    background-color: var(--main-background);
+    font-family: monospace;
+    padding: 0.4em;
+    border-radius: 3px;
 }
 
 .svg-icon {
@@ -55,4 +110,17 @@ a:hover {
     text-align: center;
     color: var(--main-light-gray);
     margin: 0 1em;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .card {
+        border-radius: 0px;
+        background-color: var(--main-gray);
+        padding: 1em 1em 1em 1em;
+        width: 100%;
+        min-height: 400px;
+    }
+
 }

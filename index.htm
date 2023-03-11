@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital@0;1&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="assets/js/base.js"></script>
     <script src="public/RomPatcher.js/js/MarcFile.js"></script>
@@ -24,19 +24,30 @@
     </header>
 
     <main id="main-content">
-
         <div class="card">
-            <div id="step-1">
-                <input type="file" accept=".nds" onchange="onInputRomUploaded(this)" >
+            <div class="card-content" id="step-1">
+                <h3>Step 1 - Upload your ROM</h2>
+                    <input type="file" accept=".nds" onchange="onInputRomUploaded(this)">
+
+
+                    <div class="card-content" id="step-2" style="display: none">
+                        <div class="rom-info-content">
+                            <a href="javascript:void(0)" id="rom-info-name"></a>
+                            <div id="rom-info-digest"></div>
+                            <img id="rom-info-image" src="assets/img/mkds_eur.png">
+                        </div>
+
+                        <h3>Step 2 - Select patch</h3>
+
+                        <select id="romPatchesSelector">
+                            <option>Ermii Kart DS Legacy Edition 1.0</option>
+                        </select>
+
+                        <a href="javascript:void(0)" class="btn bg-accent" onclick="patchRom()">Apply Patch!</a>
+                    </div>
+
             </div>
-            <div id="step-2" style="display: none">
-                <img id="romImage" src="assets/img/mkds_eur.png">
-                
-                <select id="romPatchesSelector">
-                    
-                </select>
-                <button onclick="patchRom()">Patch ROM</button>
-            </div>
+
         </div>
     </main>
 
@@ -50,7 +61,8 @@
             </a>
         </p>
         <p>
-            Based on <a target="_blank" href="https://github.com/marcrobledo/RomPatcher.js">RomPatcher.js</a> by <a target="_blank" href="https://www.marcrobledo.com/">Marc Robledo</a> (MIT License)
+            Based on <a target="_blank" href="https://github.com/marcrobledo/RomPatcher.js">RomPatcher.js</a> by <a
+                target="_blank" href="https://www.marcrobledo.com/">Marc Robledo</a> (MIT License)
         </p>
     </footer>
 </body>

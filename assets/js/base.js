@@ -12,18 +12,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function loadRomData() {
     currentRomData = null;
-    romPatches.forEach(function (e) {
-        if (e.digest == currentRomDigest) {
-            currentRomData = e;
-            loadRomImage();
+    
+    for (var i = 0; i < romPatches.length; i++) {
+        if (romPatches[i].digest == currentRomDigest) {
+            currentRomData = romPatches[i];
+            loadRomInfo();
             loadRomPatches();
+            return;
         }
-    })
+    }
+
+    document.getElementById("step-2").style = "display: none;";
+    alert("The supplied ROM isn't compatible")
 }
 
-function loadRomImage() {
-    var image = document.getElementById("romImage");
+function loadRomInfo() {
+    var image = document.getElementById("rom-info-image");
     image.src = "assets/img/" + currentRomData.imgFile;
+
+    var romNameDiv = document.getElementById("rom-info-name");
+    romNameDiv.innerText = currentRomData.name;
+
+    var romDigestDiv = document.getElementById("rom-info-digest");
+    romDigestDiv.innerText = "SHA-256 " + currentRomData.digest;
 }
 
 function loadRomPatches() {
