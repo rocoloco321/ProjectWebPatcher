@@ -6,38 +6,52 @@
         "patches": 
         [
             {
-                "name": "Ermii Kart DS Legacy Edition 1.0",
-                "fileName": "eur-le.xdelta",
-                "fileUri": "https://github.com/Ermelber/ErmiiKartDS-release/releases/download/v1.0.0-LE/eur-le.xdelta",
-                "patchedRomFileName": "Ermii Kart DS - Legacy Edition (1.0).nds"
+                "name": "Nitro Revolution (03-07-23)",
+                "fileName": "Europe_Alt.xdelta",
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/Europe_Alt.xdelta",
+                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
             }
         ]
     },
     {
-        "name": "Ermii Kart DS (b1-r)",
-        "digest": "aea821ada922be0d9c4a3d6a59a2c1ff175220e1f3867b3eaae3d9d91ac337a1",
-        "imgFile": "ekds_b1.png",
+        "name": "Mario Kart DS (EUR)",
+        "digest": "d1dd7a96e6c8c912faac2e4accb83682de0f42bac34f1ad5313d6cb78fb8d225",
+        "imgFile": "mkds_eur.png",
         "patches": 
         [
             {
-                "name": "Ermii Kart DS Legacy Edition 1.0",
-                "fileName": "b1r-le.xdelta",
-                "fileUri": "https://github.com/Ermelber/ErmiiKartDS-release/releases/download/v1.0.0-LE/b1r-le.xdelta",
-                "patchedRomFileName": "Ermii Kart DS - Legacy Edition (1.0).nds"
+                "name": "Nitro Revolution (03-07-23)",
+                "fileName": "Europe.xdelta",
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/Europe.xdelta",
+                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
             }
         ]
     },
     {
-        "name": "Ermii Kart DS (b1-s)",
-        "digest": "c4c9ddf1ee97bcfc699ae4ca9745121286a09942033cdfe7e6ac4057c0b4f2e7",
-        "imgFile": "ekds_b1.png",
+        "name": "Mario Kart DS (USA)",
+        "digest": "0ea8a91a0ae3e9db26337c25a6a8568f6737fa36c1e0761988c0fa0ecbf210ed",
+        "imgFile": "mkds_eur.png",
         "patches": 
         [
             {
-                "name": "Ermii Kart DS Legacy Edition 1.0",
-                "fileName": "b1s-le.xdelta",
-                "fileUri": "https://github.com/Ermelber/ErmiiKartDS-release/releases/download/v1.0.0-LE/b1s-le.xdelta",
-                "patchedRomFileName": "Ermii Kart DS - Legacy Edition (1.0).nds"
+                "name": "Nitro Revolution (03-07-23)",
+                "fileName": "America.xdelta",
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/America.xdelta",
+                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
+            }
+        ]
+    },
+    {
+        "name": "Mario Kart DS (USA)",
+        "digest": "131405459a92c8082f8c63518f7883213d0fd203ec1835cbaebcb00a3de218a0",
+        "imgFile": "mkds_eur.png",
+        "patches": 
+        [
+            {
+                "name": "Nitro Revolution (03-07-23)",
+                "fileName": "America_alt.xdelta",
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/America_alt.xdelta",
+                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
             }
         ]
     }
