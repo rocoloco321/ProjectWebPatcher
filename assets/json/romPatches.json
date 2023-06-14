@@ -24,6 +24,12 @@
                 "fileName": "Europe.xdelta",
                 "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/Europe.xdelta",
                 "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
+            },
+            {
+                "name": "CTGP-Nitro 1.0 (Europe)",
+                "fileName": "CTGP_Nitro_EU.xdelta",
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/1.0-CTGPNitro/CTGP_Nitro_EU.xdelta",
+                "patchedRomFileName": "CTGP-Nitro 1.0 (Europe).nds"
             }
         ]
     },
@@ -38,6 +44,12 @@
                 "fileName": "America.xdelta",
                 "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/America.xdelta",
                 "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
+            },
+            {
+                "name": "CTGP-Nitro 1.0 (America)",
+                "fileName": "CTGP_Nitro_US.xdelta",
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/1.0-CTGPNitro/CTGP_Nitro_US.xdelta",
+                "patchedRomFileName": "CTGP-Nitro 1.0 (America).nds"
             }
         ]
     },
