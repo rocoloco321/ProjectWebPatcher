@@ -1,29 +1,15 @@
 [
     {
         "name": "Mario Kart DS (EUR)",
-        "digest": "2b15d1d5e6a14be3218327cf22fed61535defd37e0a85aeebad3040b9a68e6f9",
-        "imgFile": "mkds_eur.png",
-        "patches": 
-        [
-            {
-                "name": "Nitro Revolution (03-07-23)",
-                "fileName": "Europe_Alt.xdelta",
-                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/Europe_Alt.xdelta",
-                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
-            }
-        ]
-    },
-    {
-        "name": "Mario Kart DS (EUR)",
         "digest": "d1dd7a96e6c8c912faac2e4accb83682de0f42bac34f1ad5313d6cb78fb8d225",
         "imgFile": "mkds_eur.png",
         "patches": 
         [
             {
-                "name": "Nitro Revolution (03-07-23)",
+                "name": "Nitro Revolution (07-22-23)",
                 "fileName": "Europe.xdelta",
-                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/Europe.xdelta",
-                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/07-22-23/Europe.xdelta",
+                "patchedRomFileName": "Nitro Revolution.nds"
             },
             {
                 "name": "CTGP-Nitro 1.0 (Europe)",
@@ -40,10 +26,10 @@
         "patches": 
         [
             {
-                "name": "Nitro Revolution (03-07-23)",
+                "name": "Nitro Revolution (07-22-23)",
                 "fileName": "America.xdelta",
-                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/America.xdelta",
-                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/07-22-23/America.xdelta",
+                "patchedRomFileName": "Nitro Revolution.nds"
             },
             {
                 "name": "CTGP-Nitro 1.0 (America)",
@@ -54,16 +40,16 @@
         ]
     },
     {
-        "name": "Mario Kart DS (USA)",
-        "digest": "131405459a92c8082f8c63518f7883213d0fd203ec1835cbaebcb00a3de218a0",
-        "imgFile": "mkds_eur.png",
+        "name": "Nitro Revolution (03-07-23)",
+        "digest": "f48f02d23b1cb91176ad19dc0ecbdebe478b105cb53b4ae638841f529dde7d15",
+        "imgFile": "NR.png",
         "patches": 
         [
             {
-                "name": "Nitro Revolution (03-07-23)",
-                "fileName": "America_alt.xdelta",
-                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/03-07-23/America_alt.xdelta",
-                "patchedRomFileName": "Nitro Revolution (03-07-23).nds"
+                "name": "Nitro Revolution (07-22-23)",
+                "fileName": "NR.03-07-23.xdelta",
+                "fileUri": "https://github.com/rocoloco321/Nitro-Revolution-Releases/releases/download/07-22-23/NR.03-07-23.xdelta",
+                "patchedRomFileName": "Nitro Revolution (07-22-23).nds"
             }
         ]
     }
